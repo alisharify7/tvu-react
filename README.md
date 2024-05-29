@@ -9,3 +9,9 @@ The university has more than 176 schools and colleges across the country, and wi
 
     npm install 
     npm start
+
+
+
+
+<img src="./doc/original.png">
+<img src="./doc/react.png">
