@@ -1,0 +1,153 @@
+:root {
+  --them-gradient-light-color: #2b7bc2;
+  --them-gradient-dark-color: #0b4575;
+  --them-light-background-color: #fff;
+  --them-dark-background-color: #f5f5f5;
+  --them-border-color: #2b7bc2;
+  --them-font-titr-color: #2c7ac2;
+  --them-font-body-color: #656565;
+  --them-main-width: 80%;
+}
+
+/* common utils */
+.text-dark-brand-blue {
+  color: var(--them-gradient-dark-color) !important;
+}
+.text-normal-brand-blue {
+  color: var(--them-gradient-light-color) !important;
+}
+.bg-normal-brand-blue {
+  background-color: var(--them-gradient-light-color) !important;
+}
+.bg-light-white-brand-blue{
+  background-color: #dae8f5 !important;
+}
+.bg-dark-brand-blue {
+  background-color: var(--them-gradient-dark-color) !important;
+}
+.on-hover-orange {
+  transition: all 0.6s;
+}
+.on-hover-orange:hover {
+  color: orange;
+}
+
+.fs-09 {
+  font-size: 0.9rem !important;
+}
+.fs-08 {
+  font-size: 0.8rem !important;
+}
+.fs-07 {
+  font-size: 0.7rem !important;
+}
+.fs-06 {
+  font-size: 0.6rem !important;
+}
+.fs-01 {
+  font-size: 1rem !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.bg-gradient-index {
+  background: linear-gradient(
+    var(--them-gradient-dark-color),
+    var(--them-gradient-dark-color),
+    var(--them-gradient-light-color)
+  );
+}
+
+.bg-gradient-footer-index {
+  background: rgb(43,123,194);
+  background: linear-gradient(180deg, rgba(255,255,255,1),rgba(43,123,194,1) 0%, rgba(11,69,117,1) 100%);
+}
+.bg-gradient-multi-media {
+  background: linear-gradient(
+    var(--them-gradient-light-color),
+    var(--them-gradient-dark-color),
+    var(--them-gradient-dark-color)
+  ) !important;
+}
+
+.bg-news{
+  background-color: var(--them-dark-background-color);
+}
+
+/* end of common utils */
+
+* {
+  font-family: Vazirmatn !important;
+}
+
+/* scroll animation start */
+.scroll {
+  white-space: nowrap;
+}
+
+.scroll div {
+  display: flex;
+}
+
+.scroll p {
+  transition: all 0.5s;
+  display: inline;
+}
+.scroll p:hover {
+  color: red;
+}
+
+.RightToLeft {
+  animation: RightToLeft 36s infinite linear;
+}
+
+@keyframes RightToLeft {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.LeftToRight {
+  animation: LeftToRight 36s infinite linear;
+}
+
+@keyframes LeftToRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(200%);
+  }
+}
+/* end of scroll animation start */
+
+.border-menu{
+  border-right: white 2px solid;
+}
+/* custom list style for news */
+
+.news-section ul{
+  list-style-type: "◼";
+}
+
+.h460{
+  height: 460px;
+}
+
+/* responsive */
+
+@media (max-width:900px) {
+  
+  .h460{
+    height: inherit !important;
+  }
+  /* img {
+    height: 100%;
+    width: 100%;
+  } */
+}
